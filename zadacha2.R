@@ -7,7 +7,7 @@ data = attitude
 #1 Checking that there is no linear dependence using R^2
 model1 <- lm(rating ~ privileges+learning+raises, data=data)
 vif(model1)#the value of vif is 1.37,1.86,1.76. It shows there are not linear dependent
-summary(model1)
+
 #2 Checking how good the model is
 summary(model1)#if p-value < 0.05, it is considered good
 #r-squared is 0.45
