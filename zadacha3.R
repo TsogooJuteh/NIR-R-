@@ -1,5 +1,5 @@
 install.packages("devtools")
-devtools::install_github("bdemeshev/rlms")
+devtools::install_github("https://github.com/bdemeshev/rlms")
 
 library("lmtest")
 library("rlms")
@@ -8,6 +8,6 @@ library("GGally")
 library("car")
 library("sandwich")
 
-data <- rlms_read("C:\\Rlib\\r25i_os26d.sav")
+df <- rlms_read("r21i_os24a.sav")
 
-help(data)
+help(df)
